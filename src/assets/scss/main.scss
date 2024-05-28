@@ -3,6 +3,7 @@
 :root {
     --main-yellow: #D6A500;
     --main-dark: #0A0A09;
+    --main-gray: #ffffff66;
 }
 
 * {
@@ -10,6 +11,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Mulish", sans-serif;
+    transition: .3s;
 }
 
 a {
@@ -26,4 +28,24 @@ button {
 
 body {
     background-color: var(--main-dark);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--main-yellow);
+    border-radius: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
 }

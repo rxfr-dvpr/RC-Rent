@@ -1,4 +1,6 @@
 <template>
+  <Nav/>
+  
   <div class="text-box">
     <h1>RC-Rent Soon !</h1>
   </div>

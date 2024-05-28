@@ -1,15 +1,65 @@
 <template>
-  
+  <nav class="nav">
+    <div class="container">
+        <div class="row">
+            <router-link to="/" class="nav-logo">
+                <img :src="logoImg" alt="" class="nav-logo-img">
+            </router-link>
+
+            <ul class="nav__list">
+                <li class="nav__list-item" v-for="(link, idx) in store.links" :key="idx">
+                    <router-link :to="link.url" class="nav__list-link">{{ link.name }}</router-link>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
 </template>
 
 <script>
+import { navStore } from "@/stores/navStore.js";
 
 export default {
-
+    name: 'Nav',
+    data() {
+        return {
+            logoImg: 'https://firebasestorage.googleapis.com/v0/b/rc-rent-7f09a.appspot.com/o/logo.png?alt=media&token=c4d5e6aa-2467-425b-b5ff-145d3c437601',
+            store: navStore()
+        }
+    }
 }
 
 </script>
 
 <style lang="scss" scoped>
+
+.nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 35px 0;
+
+    .row {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__list {
+        max-width: 800px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        &-link {
+            font-size: 18px;
+            color: var(--main-gray);
+
+            &:hover {
+                color: var(--main-yellow);
+            }
+        }
+    }
+}
 
 </style>
