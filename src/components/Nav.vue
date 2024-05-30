@@ -11,6 +11,8 @@
                     <router-link :to="link.url" class="nav__list-link">{{ link.name }}</router-link>
                 </li>
             </ul>
+
+            <a href="tel:+998998173066" class="contact-num">+998 99 817 30 66</a>
         </div>
     </div>
   </nav>
@@ -46,7 +48,7 @@ export default {
     }
 
     &__list {
-        max-width: 800px;
+        max-width: 750px;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -58,6 +60,14 @@ export default {
             &:hover {
                 color: var(--main-yellow);
             }
+        }
+    }
+
+    .contact-num {
+        color: var(--main-white);
+
+        &:hover {
+            color: var(--main-yellow);
         }
     }
 }
