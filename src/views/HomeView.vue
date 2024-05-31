@@ -1,5 +1,7 @@
 <template>
   <Nav/>
+
+  <Header/>
   
   <div class="text-box">
     <h1>RC-Rent Soon !</h1>
@@ -7,12 +9,14 @@
 </template>
 
 <script>
+import Header from '@/components/Header.vue';
 import Nav from '@/components/Nav.vue'
 
 export default {
   name: 'Home Page',
   components: {
-    Nav
+    Nav,
+    Header
   }
 }
 

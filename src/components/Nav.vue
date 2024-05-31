@@ -37,7 +37,7 @@ export default {
 
 .nav {
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     padding: 35px 0;
