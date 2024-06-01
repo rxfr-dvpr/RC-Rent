@@ -2,10 +2,10 @@
   <header class="header">
     <div class="container">
         <div class="row">
-            <h1 class="header-title">{{ store.title  }}</h1>
+            <h1 class="header-title" v-html="store.title"></h1>
 
             <div class="header__descr">
-                <p class="header__descr-txts" v-for="(txt, idx) in store.txts" :key="idx">{{ txt }}</p>
+                <p class="header__descr-txt" v-for="(txt, idx) in store.txts" :key="idx">{{ txt }}</p>
             </div>
 
         </div>
@@ -41,11 +41,24 @@ export default {
     &-title {
         font-size: 60px;
         font-weight: 700;
+        font-style: italic;
     }
 
     &__descr {
-        max-width: 430px;
+        max-width: 500px;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+
+        &-txt {
+            font-size: 25px;
+            font-weight: 600;
+
+            &::first-letter {
+                text-transform: uppercase;
+            }
+        }
     }
 }
 

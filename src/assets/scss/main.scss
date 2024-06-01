@@ -51,3 +51,11 @@ body {
 .row {
     display: flex;
 }
+
+.header {
+    &-title {
+        .yellow {
+            color: var(--main-yellow);
+        }
+    }
+}
