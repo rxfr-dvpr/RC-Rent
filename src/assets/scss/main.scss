@@ -59,3 +59,15 @@ body {
         }
     }
 }
+
+.all-btn {
+    max-width: max-content;
+    width: 100%;
+    padding: 20px 52px;
+    background: linear-gradient(280.1deg, #FFFFFF -23.59%, #DBB500 115.07%);
+    border-radius: 30px;
+    border: 0;
+    font-size: 20px;
+    color: var(--main-dark);
+    font-weight: 700;
+}

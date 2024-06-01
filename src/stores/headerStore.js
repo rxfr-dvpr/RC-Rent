@@ -7,6 +7,7 @@ export const headerStore = defineStore('Header Store', {
         'Доставка в любую точку Крыма',
         'Бесплатно доп. аксессуары',
         'Любой способ оплаты'
-    ]
+    ],
+    btnTxt: 'Выбрать авто'
   })
 })

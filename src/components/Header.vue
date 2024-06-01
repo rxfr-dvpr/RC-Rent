@@ -8,6 +8,8 @@
                 <p class="header__descr-txt" v-for="(txt, idx) in store.txts" :key="idx">{{ txt }}</p>
             </div>
 
+            <button class="header-btn all-btn">{{ store.btnTxt }}</button>
+
         </div>
     </div>
   </header>
