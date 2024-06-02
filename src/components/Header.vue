@@ -10,6 +10,13 @@
 
             <button class="header-btn all-btn">{{ store.btnTxt }}</button>
 
+            <img :src="store.img.map" alt="" class="header-map-img">
+
+            <div class="header-images">
+                <img :src="store.img.car" alt="" class="header-car-img">
+
+                <img :src="store.img.bg" class="car-bg-img">
+            </div>
         </div>
     </div>
   </header>
@@ -38,6 +45,7 @@ export default {
     .row {
         flex-direction: column;
         row-gap: 50px;
+        position: relative;
     }
 
     &-title {
@@ -60,6 +68,40 @@ export default {
             &::first-letter {
                 text-transform: uppercase;
             }
+        }
+    }
+
+    &-map-img {
+        max-width: 100%;
+        width: 100%;
+        position: absolute;
+        top: -30%;
+        left: 0;
+        z-index: -1;
+        pointer-events: none;
+    }
+
+    &-images {
+        max-width: 900px;
+        width: 100%;
+        position: absolute;
+        top: 20%;
+        right: -8%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .header-car-img {
+            width: 80%;
+            pointer-events: none;
+        }
+
+        .car-bg-img {
+            position: absolute;
+            top: -35%;
+            left: 0;
+            width: 100%;
+            z-index: -1;
         }
     }
 }
