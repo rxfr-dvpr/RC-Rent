@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav">
+  <nav class="nav" :class="{'blur': bgBlur}">
     <div class="container">
         <div class="row">
             <router-link to="/" class="nav-logo">
@@ -26,8 +26,18 @@ export default {
     data() {
         return {
             logoImg: 'https://firebasestorage.googleapis.com/v0/b/rc-rent-7f09a.appspot.com/o/logo.png?alt=media&token=c4d5e6aa-2467-425b-b5ff-145d3c437601',
-            store: navStore()
+            store: navStore(),
+            bgBlur: false
         }
+    },
+    mounted() {
+        window.addEventListener('scroll', () => {
+            if(window.scrollY > 100) {
+                this.bgBlur = true
+            } else {
+                this.bgBlur = false
+            }
+        })
     }
 }
 
@@ -41,6 +51,7 @@ export default {
     top: 0;
     left: 0;
     padding: 35px 0;
+    z-index: 2024;
 
     .row {
         justify-content: space-between;
@@ -69,6 +80,10 @@ export default {
         &:hover {
             color: var(--main-yellow);
         }
+    }
+
+    &.blur {
+        backdrop-filter: blur(10px);
     }
 }
 
