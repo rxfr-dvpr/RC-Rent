@@ -23,9 +23,8 @@ export const rentStore = defineStore('Rent Store', {
     ],
     btnTxt: 'Договор аренды',
     img: {
-      map: 'https://firebasestorage.googleapis.com/v0/b/rc-rent-7f09a.appspot.com/o/Header%2Fheader-bg.png?alt=media&token=80c438c3-aead-45e9-8473-030d7fa2ed17',
-      car: 'https://firebasestorage.googleapis.com/v0/b/rc-rent-7f09a.appspot.com/o/Header%2Fheader-car.png?alt=media&token=70aacce0-d8fc-4811-bca4-bcce5ab6707d',
-      bg: 'https://firebasestorage.googleapis.com/v0/b/rc-rent-7f09a.appspot.com/o/Header%2Fcar-bg.png?alt=media&token=6c937b8c-b340-45a8-9085-3836f2ccec31'
+      car: 'https://firebasestorage.googleapis.com/v0/b/rc-rent-7f09a.appspot.com/o/Rent%2Fbmw-img.png?alt=media&token=654d938b-fc61-44b4-a168-ad8458261a02',
+      bg: 'https://firebasestorage.googleapis.com/v0/b/rc-rent-7f09a.appspot.com/o/Rent%2Frent-bg.png?alt=media&token=9b9e2924-a8eb-4918-8afb-daf70aa3a818'
     }
   })
 })

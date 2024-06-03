@@ -11,6 +11,12 @@
                     <p class="rent-name">{{ card.name }}</p>
                 </div>
             </div>
+
+            <button class="rent-btn all-btn">{{ store.btnTxt }}</button>
+
+            <img :src="store.img.bg" alt="" class="bg-img">
+
+            <img :src="store.img.car" alt="" class="car-img">
         </div>
     </div>
   </section>
@@ -35,12 +41,15 @@ export default {
 .rent__section {
     width: 100%;
     padding-top: 90px;
+    position: relative;
 
     .row {
         flex-direction: column;
         align-items: center;
         text-align: center;
         row-gap: 130px;
+        position: relative;
+        padding-bottom: 250px;
     }
 
     .rent-title {
@@ -71,6 +80,28 @@ export default {
                 font-size: 22px;
             }
         }
+    }
+
+    .rent-btn {
+        padding: 10px 15px;
+    }
+
+    .bg-img {
+        max-width: 100%;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+
+    .car-img {
+        max-width: 795px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: -10%;
     }
 }
 
