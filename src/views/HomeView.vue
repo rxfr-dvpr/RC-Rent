@@ -3,20 +3,22 @@
 
   <Header/>
   
-  <div class="text-box">
-    <h1>RC-Rent Soon !</h1>
-  </div>
+  <main class="main">
+    <Rent/>
+  </main>
 </template>
 
 <script>
 import Header from '@/components/Header.vue';
 import Nav from '@/components/Nav.vue'
+import Rent from '@/components/Rent.vue';
 
 export default {
   name: 'Home Page',
   components: {
     Nav,
-    Header
+    Header,
+    Rent
   }
 }
 
@@ -24,17 +26,9 @@ export default {
 
 <style lang="scss" scoped>
 
-.text-box {
+.main {
   width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-  h1 {
-    color: var(--main-yellow);
-  }
+  margin-top: 180px;
 }
 
 </style>

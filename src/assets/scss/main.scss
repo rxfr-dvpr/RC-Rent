@@ -52,14 +52,6 @@ body {
     display: flex;
 }
 
-.header {
-    &-title {
-        .yellow {
-            color: var(--main-yellow);
-        }
-    }
-}
-
 .all-btn {
     max-width: max-content;
     width: 100%;
@@ -70,4 +62,14 @@ body {
     font-size: 20px;
     color: var(--main-dark);
     font-weight: 700;
+}
+
+.all-title-clr {
+    color: var(--main-white);
+    font-weight: 700;
+    font-style: italic;
+
+    .yellow {
+        color: var(--main-yellow);
+    }
 }

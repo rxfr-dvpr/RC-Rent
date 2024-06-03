@@ -2,7 +2,7 @@
   <header class="header">
     <div class="container">
         <div class="row">
-            <h1 class="header-title" v-html="store.title"></h1>
+            <h1 class="header-title all-title-clr" v-html="store.title"></h1>
 
             <div class="header__descr">
                 <p class="header__descr-txt" v-for="(txt, idx) in store.txts" :key="idx">{{ txt }}</p>
@@ -50,8 +50,6 @@ export default {
 
     &-title {
         font-size: 60px;
-        font-weight: 700;
-        font-style: italic;
     }
 
     &__descr {
