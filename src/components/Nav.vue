@@ -83,6 +83,7 @@ export default {
     }
 
     &.blur {
+        padding: 20px 0 !important;
         backdrop-filter: blur(10px);
     }
 }
