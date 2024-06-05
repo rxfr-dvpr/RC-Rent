@@ -7,6 +7,8 @@
     <Loader/>
     
     <Rent/>
+
+    <Reviews/>
   </main>
 </template>
 
@@ -15,6 +17,7 @@ import Header from '@/components/Header.vue';
 import Nav from '@/components/Nav.vue'
 import Rent from '@/components/Rent.vue';
 import Loader from '@/components/Loader.vue';
+import Reviews from '@/components/Reviews.vue';
 
 export default {
   name: 'Home Page',
@@ -22,7 +25,8 @@ export default {
     Nav,
     Header,
     Rent,
-    Loader
+    Loader,
+    Reviews
   }
 }
 

@@ -49,7 +49,7 @@ export default {
         text-align: center;
         row-gap: 130px;
         position: relative;
-        padding-bottom: 250px;
+        padding-bottom: 300px;
     }
 
     .rent-title {
@@ -100,7 +100,7 @@ export default {
         max-width: 795px;
         width: 100%;
         position: absolute;
-        bottom: 0;
+        bottom: 5%;
         left: -10%;
     }
 }
