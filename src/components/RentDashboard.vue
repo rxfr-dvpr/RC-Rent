@@ -5,6 +5,8 @@
             <div class="dashboard-panel">
                 <h2 class="dashboard-title all-title-clr" v-html="store.title"></h2>
             </div>
+
+            <img :src="store.img.bg" alt="" class="dashboard-bg">
         </div>
     </div>
   </section>
@@ -32,6 +34,7 @@ export default {
     .row {
         flex-direction: column;
         align-items: center;
+        position: relative;
     }
 
     .dashboard-panel {
@@ -45,6 +48,16 @@ export default {
         border: solid 1px #888888;
         border-radius: 20px;
         padding: 60px 0 35px;
+    }
+
+    .dashboard-bg {
+        max-width: 100%;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
     }
 }
 
