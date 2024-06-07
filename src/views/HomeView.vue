@@ -8,7 +8,10 @@
     
     <Rent/>
 
+    <RentDashboard/>
+
     <Reviews/>
+
   </main>
 </template>
 
@@ -18,6 +21,7 @@ import Nav from '@/components/Nav.vue'
 import Rent from '@/components/Rent.vue';
 import Loader from '@/components/Loader.vue';
 import Reviews from '@/components/Reviews.vue';
+import RentDashboard from '@/components/RentDashboard.vue';
 
 export default {
   name: 'Home Page',
@@ -26,7 +30,8 @@ export default {
     Header,
     Rent,
     Loader,
-    Reviews
+    Reviews,
+    RentDashboard
   }
 }
 
