@@ -19,7 +19,7 @@ export const dashboardStore = defineStore('Dashboard Store', {
                 ]
             },
             {
-                optionName: 'Машина',
+                optionName: 'Дата получения',
                 options: [
                     'BMW i325',
                     'BMW 320',
@@ -33,7 +33,63 @@ export const dashboardStore = defineStore('Dashboard Store', {
                 ]
             },
             {
-                optionName: 'Машина',
+                optionName: 'Дата возврата',
+                options: [
+                    'BMW i325',
+                    'BMW 320',
+                    'BMW Z4',
+                    'BMW 420D',
+                    'Mercedes С180',
+                    'Mercedes Viano',
+                    'KIA K5',
+                    'KIA RIO',
+                    'Volkswagen Touareg',
+                ]
+            },
+            {
+                optionName: 'Время получения',
+                options: [
+                    'BMW i325',
+                    'BMW 320',
+                    'BMW Z4',
+                    'BMW 420D',
+                    'Mercedes С180',
+                    'Mercedes Viano',
+                    'KIA K5',
+                    'KIA RIO',
+                    'Volkswagen Touareg',
+                ]
+            },
+            {
+                optionName: 'Время возврата',
+                options: [
+                    'BMW i325',
+                    'BMW 320',
+                    'BMW Z4',
+                    'BMW 420D',
+                    'Mercedes С180',
+                    'Mercedes Viano',
+                    'KIA K5',
+                    'KIA RIO',
+                    'Volkswagen Touareg',
+                ]
+            },
+            {
+                optionName: 'Место получения',
+                options: [
+                    'BMW i325',
+                    'BMW 320',
+                    'BMW Z4',
+                    'BMW 420D',
+                    'Mercedes С180',
+                    'Mercedes Viano',
+                    'KIA K5',
+                    'KIA RIO',
+                    'Volkswagen Touareg',
+                ]
+            },
+            {
+                optionName: 'Место возврата',
                 options: [
                     'BMW i325',
                     'BMW 320',

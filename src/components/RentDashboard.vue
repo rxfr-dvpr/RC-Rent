@@ -89,9 +89,10 @@ export default {
             width: 100%;
             color: #0C0C0B;
             outline: none;
-            padding-left: 55px;
             font-size: 24px;
             cursor: pointer;
+            padding-left: 18px;
+            font-weight: 600;
 
             option {
                 color: #0C0C0B;
@@ -99,7 +100,8 @@ export default {
             }
 
             &.select-1 {
-                max-width: 100% !important; 
+                max-width: 100% !important;
+                padding-left: 55px;
             }
         }
     }
