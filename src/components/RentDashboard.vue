@@ -12,10 +12,37 @@
                         <option :value="option" v-for="(option, idd) in select.options" class="all-option"
                         :key="idd">{{ option }}</option>
                     </select>
+
+                    <div class="option-box">
+                        <label for="gdate">Дата получения:</label>
+
+                        <input type="date" id="gdate" class="all-select get-date">
+                    </div>
+
+                    <div class="option-box">
+                        <label for="rdate">Дата возврата:</label>
+
+                        <input type="date" class="all-select return-date" id="rdate">
+                    </div>
+
+
+                    <div class="option-box">
+                        <label for="gtime">Время получения:</label>
+
+                        <input type="time" class="all-select get-time" id="gtime">
+                    </div>
+
+                    <div class="option-box">
+                        <label for="rtime">Время возврата:</label>
+
+                        <input type="time" class="all-select return-time" id="rtime">
+                    </div>
+
                 </div>
 
                 <button class="dashboard-panel-btn all-btn">{{ store.btnTxt }}</button>
             </div>
+
 
             <img :src="store.img.bg" alt="" class="dashboard-bg">
         </div>
@@ -85,7 +112,6 @@ export default {
         justify-content: center;
 
         .all-select {
-            max-width: 43.5%;
             width: 100%;
             color: #0C0C0B;
             outline: none;
@@ -102,6 +128,24 @@ export default {
             &.select-1 {
                 max-width: 100% !important;
                 padding-left: 55px;
+            }
+
+            &.select-2,&.select-3 {
+                max-width: 43.5%;
+                width: 100%;    
+            }
+        }
+
+        .option-box {
+            max-width: 43.5%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+
+            label {
+                font-size: 13px;
+                cursor: pointer;
             }
         }
     }

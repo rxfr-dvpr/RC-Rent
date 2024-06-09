@@ -6,62 +6,7 @@ export const dashboardStore = defineStore('Dashboard Store', {
         selects: [
             {
                 optionName: 'Машина',
-                options: [
-                    'BMW i325',
-                    'BMW 320',
-                    'BMW Z4',
-                    'BMW 420D',
-                    'Mercedes С180',
-                    'Mercedes Viano',
-                    'KIA K5',
-                    'KIA RIO',
-                    'Volkswagen Touareg',
-                ]
-            },
-            {
-                optionName: 'Дата получения',
-                options: [
-                    'BMW i325',
-                    'BMW 320',
-                    'BMW Z4',
-                    'BMW 420D',
-                    'Mercedes С180',
-                    'Mercedes Viano',
-                    'KIA K5',
-                    'KIA RIO',
-                    'Volkswagen Touareg',
-                ]
-            },
-            {
-                optionName: 'Дата возврата',
-                options: [
-                    'BMW i325',
-                    'BMW 320',
-                    'BMW Z4',
-                    'BMW 420D',
-                    'Mercedes С180',
-                    'Mercedes Viano',
-                    'KIA K5',
-                    'KIA RIO',
-                    'Volkswagen Touareg',
-                ]
-            },
-            {
-                optionName: 'Время получения',
-                options: [
-                    'BMW i325',
-                    'BMW 320',
-                    'BMW Z4',
-                    'BMW 420D',
-                    'Mercedes С180',
-                    'Mercedes Viano',
-                    'KIA K5',
-                    'KIA RIO',
-                    'Volkswagen Touareg',
-                ]
-            },
-            {
-                optionName: 'Время возврата',
+                type: '',
                 options: [
                     'BMW i325',
                     'BMW 320',
@@ -76,31 +21,11 @@ export const dashboardStore = defineStore('Dashboard Store', {
             },
             {
                 optionName: 'Место получения',
-                options: [
-                    'BMW i325',
-                    'BMW 320',
-                    'BMW Z4',
-                    'BMW 420D',
-                    'Mercedes С180',
-                    'Mercedes Viano',
-                    'KIA K5',
-                    'KIA RIO',
-                    'Volkswagen Touareg',
-                ]
+                options: []
             },
             {
                 optionName: 'Место возврата',
-                options: [
-                    'BMW i325',
-                    'BMW 320',
-                    'BMW Z4',
-                    'BMW 420D',
-                    'Mercedes С180',
-                    'Mercedes Viano',
-                    'KIA K5',
-                    'KIA RIO',
-                    'Volkswagen Touareg',
-                ]
+                options: []
             },
         ],
         img: {
