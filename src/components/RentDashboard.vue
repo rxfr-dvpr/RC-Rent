@@ -121,6 +121,8 @@ export default {
             font-weight: 600;
 
             option {
+                font-size: 18px;
+                font-weight: 500;
                 color: #0C0C0B;
                 cursor: pointer;
             }

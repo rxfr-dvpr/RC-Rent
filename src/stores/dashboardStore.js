@@ -21,11 +21,27 @@ export const dashboardStore = defineStore('Dashboard Store', {
             },
             {
                 optionName: 'Место получения',
-                options: []
+                options: [
+                    '9121 Thad Landing Suite',
+                    '850 Alanna Courts',
+                    '314 Cole Forest Apt. 586',
+                    '999 Brianne Corners Suite',
+                    '212 Mitchell Heights',
+                    '391 Elenor Ford Apt',
+                    '4961 Hane Falls Apt',
+                ]
             },
             {
                 optionName: 'Место возврата',
-                options: []
+                options: [
+                    '9121 Thad Landing Suite',
+                    '850 Alanna Courts',
+                    '314 Cole Forest Apt. 586',
+                    '999 Brianne Corners Suite',
+                    '212 Mitchell Heights',
+                    '391 Elenor Ford Apt',
+                    '4961 Hane Falls Apt',
+                ]
             },
         ],
         img: {
