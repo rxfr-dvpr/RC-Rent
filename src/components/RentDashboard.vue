@@ -2,7 +2,7 @@
   <section class="dashboard__section">
     <div class="container">
         <div class="row">
-            <div class="dashboard-panel">
+            <form class="dashboard-panel" @submit.prevent="modalOpened = true">
                 <h2 class="dashboard-title all-title-clr" v-html="store.title"></h2>
 
                 <div class="dashboard-options">
@@ -41,10 +41,13 @@
                 </div>
 
                 <button class="dashboard-panel-btn all-btn">{{ store.btnTxt }}</button>
-            </div>
-
+            </form>
 
             <img :src="store.img.bg" alt="" class="dashboard-bg">
+
+            <div class="order-modal" :class="{'opened': modalOpened}" @click.self="modalOpened = false">
+                <p class="order-modal-txt">{{ store.modalTxt }}</p>
+            </div>
         </div>
     </div>
   </section>
@@ -57,7 +60,8 @@ export default {
     name: 'Rent Dashboard Section',
     data() {
         return {
-            store: dashboardStore()
+            store: dashboardStore(),
+            modalOpened: false
         }
     }
 }
@@ -85,7 +89,7 @@ export default {
         background: #050C14;
         border: solid 1px #888888;
         border-radius: 20px;
-        padding: 60px 0 35px;
+        padding: 50px 0 30px;
 
         &-btn {
             padding: 8px 70px;
@@ -115,10 +119,11 @@ export default {
             width: 100%;
             color: #0C0C0B;
             outline: none;
-            font-size: 24px;
+            font-size: 20px;
             cursor: pointer;
             padding-left: 18px;
             font-weight: 600;
+            border: 0;
 
             option {
                 font-size: 18px;
@@ -149,6 +154,36 @@ export default {
                 font-size: 13px;
                 cursor: pointer;
             }
+        }
+    }
+
+    .order-modal {
+        max-width: 700px;
+        width: 100%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #5DBDB3;
+        background: var(--main-yellow);
+        z-index: 2020;
+        transition: .4s;
+
+        &-txt {
+            font-size: 45px;
+            font-weight: 700;
+            color: var(--main-dark);
+        }
+
+        &.opened {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 1;
         }
     }
 }
