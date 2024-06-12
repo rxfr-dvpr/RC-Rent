@@ -9,6 +9,8 @@
                     <img :src="slide.img" alt="" class="slide-img">
                 </div>
             </div>
+
+            <img :src="store.img.car" alt="" class="reviews-car-img">
         </div>
     </div>
   </section>
@@ -39,6 +41,7 @@ export default {
         align-items: center;
         text-align: center;
         row-gap: 90px;
+        position: relative;
     }
 
     .reviews__slides {
@@ -56,6 +59,13 @@ export default {
                 width: 100%;
             }
         }
+    }
+
+    .reviews-car-img {
+        position: absolute;
+        top: 10%;
+        right: -20%;
+        z-index: -1;
     }
 }
 

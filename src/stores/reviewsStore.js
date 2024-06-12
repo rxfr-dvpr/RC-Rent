@@ -13,6 +13,9 @@ export const reviewsStore = defineStore('Reviews Store', {
       {
         img: 'https://firebasestorage.googleapis.com/v0/b/rc-rent-7f09a.appspot.com/o/Reviews%2Freview-3.png?alt=media&token=ecde870d-ba47-4177-9853-1852e4857e47'
       },
-    ]
+    ],
+    img: {
+      car: 'https://firebasestorage.googleapis.com/v0/b/rc-rent-7f09a.appspot.com/o/Reviews%2Freviews-car.png?alt=media&token=bede621f-d207-4b99-ab12-3916125cc63b'
+    }
   })
 })
