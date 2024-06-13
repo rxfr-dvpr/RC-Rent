@@ -8,7 +8,7 @@
                 <p class="header__descr-txt" v-for="(txt, idx) in store.txts" :key="idx">{{ txt }}</p>
             </div>
 
-            <button class="header-btn all-btn">{{ store.btnTxt }}</button>
+            <a href="#dashboard" class="header-btn all-btn">{{ store.btnTxt }}</a>
 
             <img :src="store.img.map" alt="" class="header-map-img">
 

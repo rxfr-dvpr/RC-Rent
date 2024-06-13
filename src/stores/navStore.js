@@ -5,19 +5,19 @@ export const navStore = defineStore('Nav Store', {
     links: [
       {
         name: 'Наш парк',
-        url: 'garage'
+        url: '#dashboard'
       },
       {
         name: 'Условия аренды',
-        url: 'rent'
+        url: '#rent'
       },
       {
         name: 'Отзывы',
-        url: 'reviews'
+        url: '#reviews'
       },
       {
         name: 'Контакты',
-        url: 'contacts'
+        url: '#footer'
       }
     ]
   })

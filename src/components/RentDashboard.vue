@@ -1,5 +1,5 @@
 <template>
-  <section class="dashboard__section">
+  <section class="dashboard__section" id="dashboard">
     <div class="container">
         <div class="row">
             <form class="dashboard-panel" @submit.prevent="modalOpened = true">

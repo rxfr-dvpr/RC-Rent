@@ -1,5 +1,5 @@
 <template>
-  <section class="rent__section">
+  <section class="rent__section" id="rent">
     <div class="container">
         <div class="row">
             <h2 class="rent-title all-title-clr" v-html="store.title"></h2>
@@ -12,7 +12,7 @@
                 </div>
             </div>
 
-            <button class="rent-btn all-btn">{{ store.btnTxt }}</button>
+            <a href="#dashboard" class="rent-btn all-btn">{{ store.btnTxt }}</a>
 
             <img :src="store.img.bg" alt="" class="bg-img">
 

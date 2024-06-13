@@ -8,7 +8,7 @@
 
             <ul class="nav__list">
                 <li class="nav__list-item" v-for="(link, idx) in store.links" :key="idx">
-                    <router-link :to="link.url" class="nav__list-link">{{ link.name }}</router-link>
+                    <a :href="link.url" class="nav__list-link">{{ link.name }}</a>
                 </li>
             </ul>
 
@@ -84,7 +84,7 @@ export default {
 
     &.blur {
         padding: 20px 0 !important;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(20px);
     }
 }
 

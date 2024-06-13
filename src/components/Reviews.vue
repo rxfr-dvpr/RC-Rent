@@ -1,5 +1,5 @@
 <template>
-  <section class="reviews__section">
+  <section class="reviews__section" id="reviews">
     <div class="container">
         <div class="row">
             <h2 class="reviews-title all-title-clr" v-html="store.title"></h2>
@@ -57,6 +57,7 @@ export default {
 
             .slide-img {
                 width: 100%;
+                pointer-events: none;
             }
         }
     }

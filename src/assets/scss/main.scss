@@ -3,7 +3,7 @@
 :root {
     --main-yellow: #ECD774;
     --main-dark: #0A0A09;
-    --main-gray: #ffffff66;
+    --main-gray: #ffffff70;
     --main-white: #fff;
 }
 
@@ -22,6 +22,10 @@ a {
 
 ul {
     list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 button {
