@@ -12,6 +12,7 @@
 
     <Reviews/>
 
+    <Footer/>
   </main>
 </template>
 
@@ -22,6 +23,7 @@ import Rent from '@/components/Rent.vue';
 import Loader from '@/components/Loader.vue';
 import Reviews from '@/components/Reviews.vue';
 import RentDashboard from '@/components/RentDashboard.vue';
+import Footer from '@/components/Footer.vue';
 
 export default {
   name: 'Home Page',
@@ -31,7 +33,8 @@ export default {
     Rent,
     Loader,
     Reviews,
-    RentDashboard
+    RentDashboard,
+    Footer
   }
 }
 
