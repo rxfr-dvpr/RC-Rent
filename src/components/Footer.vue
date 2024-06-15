@@ -12,7 +12,13 @@
                 <p class="footer__info-descr" v-html="store.info.descr"></p>
             </div>
 
-            
+            <div class="footer__list">
+                <div class="footer__list-info" v-for="(info, idx) in store.list" :key="idx">
+                    <p class="info-name">{{ info.name }}</p>
+
+                    <p class="info-txt" v-for="txt in info.txts" :key="txt">{{ txt }}</p>
+                </div>
+            </div>
         </div>
     </div>
   </footer>
@@ -38,7 +44,7 @@ export default {
     width: 100%;
     padding: 45px 0 35px;
 
-    .footer__info {
+    &__info {
         max-width: 400px;
         width: 100%;
         display: flex;
@@ -46,13 +52,28 @@ export default {
         row-gap: 34px;
     }
 
-    .footer-logo {
+    &-logo {
         max-width: 200px;
         width: 100%;
         display: block;
 
         &-img {
             width: 100%;
+        }
+    }
+
+    .footer__list {
+        max-width: max-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        justify-content: center;
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
         }
     }
 }
