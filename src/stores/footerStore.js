@@ -21,6 +21,19 @@ export const footerStore = defineStore('Footer Store', {
           '+998 (99) 817-30-66'
         ]
       },
-    ]
+    ],
+    socials: {
+      name: 'Социальные сети',
+      links: [
+        {
+          icon: '<i class="fab fa-instagram"></i>',
+          url: 'https://www.instagram.com/rxfr_dvpr/'
+        },
+        {
+          icon: '<i class="fab fa-telegram"></i>',
+          url: 'https://t.me/rxfr_dvpr'
+        }
+      ]
+    }
   })
 })

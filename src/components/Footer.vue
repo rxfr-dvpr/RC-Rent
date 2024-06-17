@@ -19,6 +19,15 @@
                     <p class="info-txt" v-for="txt in info.txts" :key="txt">{{ txt }}</p>
                 </div>
             </div>
+
+            <div class="footer__socials">
+                <p class="footer__socials-name">{{ store.socials.name }}:</p>
+
+                <div class="footer__socials-list">
+                    <a :href="icon.url" class="socials-list-item" v-for="(icon, idx) in store.socials.links" 
+                    :key="idx" v-html="icon.icon"></a>
+                </div>
+            </div>
         </div>
     </div>
   </footer>
@@ -44,6 +53,11 @@ export default {
     width: 100%;
     padding: 45px 0 35px;
 
+    .row {
+        justify-content: space-between;
+        align-items: center;
+    }
+
     &__info {
         max-width: 400px;
         width: 100%;
@@ -62,7 +76,7 @@ export default {
         }
     }
 
-    .footer__list {
+    &__list {
         max-width: max-content;
         width: 100%;
         display: flex;
@@ -74,6 +88,28 @@ export default {
             display: flex;
             flex-direction: column;
             row-gap: 10px;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+
+        &-name {
+            font-size: 20px;
+        }
+
+        &-list {
+            max-width: max-content;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+
+            
         }
     }
 }
