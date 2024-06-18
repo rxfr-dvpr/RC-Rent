@@ -25,8 +25,10 @@
 
                 <div class="footer__socials-list">
                     <a :href="icon.url" class="socials-list-item" v-for="(icon, idx) in store.socials.links" 
-                    :key="idx" v-html="icon.icon"></a>
+                    :key="idx" v-html="icon.icon" target="_blank"></a>
                 </div>
+
+                <p class="footer__socials-policy">{{ store.socials.policy }}</p>
             </div>
         </div>
     </div>
@@ -110,6 +112,12 @@ export default {
             gap: 50px;
 
             
+        }
+
+        &-policy {
+            max-width: 220px;
+            width: 100%;
+            text-align: center;
         }
     }
 }

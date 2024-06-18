@@ -33,7 +33,8 @@ export const footerStore = defineStore('Footer Store', {
           icon: '<i class="fab fa-telegram"></i>',
           url: 'https://t.me/rxfr_dvpr'
         }
-      ]
+      ],
+      policy: 'Политика конфеденциальности'
     }
   })
 })
