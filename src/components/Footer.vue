@@ -58,6 +58,7 @@ export default {
     .row {
         justify-content: space-between;
         align-items: center;
+        gap: 30px;
     }
 
     &__info {
@@ -117,6 +118,29 @@ export default {
         &-policy {
             max-width: 220px;
             width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+
+    .footer {
+        .row {
+            flex-direction: column;
+        }
+
+        &__info {
+            align-items: center;
+            text-align: center;
+        }
+
+        &__list {
+            align-items: center;
+            text-align: center;
+        }
+
+        &__socials {
             text-align: center;
         }
     }

@@ -12,8 +12,9 @@
 
     <Reviews/>
 
-    <Footer/>
   </main>
+
+  <Footer/>
 </template>
 
 <script>
