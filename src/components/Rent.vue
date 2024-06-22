@@ -53,7 +53,7 @@ export default {
     }
 
     .rent-title {
-        font-size: 48px;
+        font-size: calc(28px + 10 * (100vw / 1920));
     }
 
     .rent__cards {
@@ -61,6 +61,7 @@ export default {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 30px;
 
         &-item {
             max-width: 200px;
@@ -77,7 +78,7 @@ export default {
             }
 
             .rent-name {
-                font-size: 22px;
+                font-size: calc(14px + 8 * (100vw / 1920));
             }
         }
     }
@@ -102,6 +103,46 @@ export default {
         position: absolute;
         bottom: 5%;
         left: -10%;
+    }
+}
+
+@media (min-width: 1920px) {
+    .rent-name {
+        font-size: 22px !important;
+    }
+
+    .rent-title {
+        font-size: 48px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .rent__section {
+        .row {
+            row-gap: 70px;
+        }
+    }
+}
+
+@media (max-width: 510px) {
+    .rent__section {
+        .row {
+            padding-bottom: 250px;
+        }
+
+        .rent__cards {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+
+    .rent__section {
+        .row {
+            padding-bottom: 200px;
+        }
     }
 }
 
