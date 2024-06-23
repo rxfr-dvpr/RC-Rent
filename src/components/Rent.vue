@@ -53,7 +53,7 @@ export default {
     }
 
     .rent-title {
-        font-size: calc(28px + 10 * (100vw / 1920));
+        font-size: calc(28px + 20 * (100vw / 1920));
     }
 
     .rent__cards {

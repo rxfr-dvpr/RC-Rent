@@ -89,10 +89,14 @@ export default {
         background: #050C14;
         border: solid 1px #888888;
         border-radius: 20px;
-        padding: 50px 0 30px;
+        padding: 50px 30px 30px;
 
         &-btn {
             padding: 8px 70px;
+        }
+
+        .dashboard-title {
+            text-align: center;
         }
     }
 
@@ -119,21 +123,21 @@ export default {
             width: 100%;
             color: #0C0C0B;
             outline: none;
-            font-size: 20px;
+            font-size: calc(15px + 5 * (100vw / 1920));
             cursor: pointer;
             padding-left: 18px;
             font-weight: 600;
             border: 0;
 
             option {
-                font-size: 18px;
+                font-size: calc(13px + 2 * (100vw / 1920));
                 font-weight: 500;
                 color: #0C0C0B;
                 cursor: pointer;
             }
 
             &.select-1 {
-                max-width: 100% !important;
+                max-width: 100%;
                 padding-left: 55px;
             }
 
@@ -184,6 +188,45 @@ export default {
         &.opened {
             transform: translate(-50%, -50%) scale(1);
             opacity: 1;
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    .all-select {
+        font-size: 20px !important;
+
+        option {
+            font-size: 15px !important;
+        }
+    }
+}
+
+@media (max-width: 710px) {
+    .dashboard-options {
+        column-gap: 30px !important;
+
+        .all-select {
+            &.select-1 {
+                max-width: 92% !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .dashboard-options {
+        flex-direction: column;
+        align-items: center;
+
+        .all-select {
+            &.select-1, &.select-2, &.select-3 {
+                max-width: 400px !important;
+            }
+        }
+
+        .option-box {
+            max-width: 400px !important;
         }
     }
 }
