@@ -180,7 +180,7 @@ export default {
         transition: .4s;
 
         &-txt {
-            font-size: 45px;
+            font-size: calc(25px + 20 * (100vw / 1920));
             font-weight: 700;
             color: var(--main-dark);
         }
@@ -202,6 +202,12 @@ export default {
     }
 }
 
+@media (max-width: 786px) {
+    .order-modal {
+        max-width: 600px !important;
+    }
+}
+
 @media (max-width: 710px) {
     .dashboard-options {
         column-gap: 30px !important;
@@ -211,6 +217,13 @@ export default {
                 max-width: 92% !important;
             }
         }
+    }
+}
+
+@media (max-width: 668px) {
+    .order-modal {
+        max-width: 500px !important;
+        padding: 80px 10px !important;
     }
 }
 
@@ -228,6 +241,13 @@ export default {
         .option-box {
             max-width: 400px !important;
         }
+    }
+}
+
+@media (max-width: 556px) {
+    .order-modal {
+        max-width: 400px !important;
+        padding: 50px 0 !important;
     }
 }
 
