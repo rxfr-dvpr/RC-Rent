@@ -63,7 +63,7 @@ body {
     background: linear-gradient(280.1deg, #FFFFFF -23.59%, #DBB500 115.07%);
     border-radius: 30px;
     border: 0;
-    font-size: 20px;
+    font-size: calc(13px + 10 * (100vw / 1920));
     color: var(--main-dark);
     font-weight: 700;
 }
@@ -90,5 +90,27 @@ body {
 @media (min-width: 1920px) {
     .all-title-clr {
         font-size: 48px !important;
+    }
+
+    .all-btn {
+        font-size: 25px !important;
+    }
+}
+
+@media (max-width: 1250px) {
+    .all-btn {
+        padding: 15px 45px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .all-btn {
+        padding: 13px 35px;
+    }
+}
+
+@media (max-width: 786px) {
+    .all-btn {
+        padding: 10px 25px;
     }
 }

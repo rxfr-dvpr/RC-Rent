@@ -51,4 +51,11 @@ export default {
   row-gap: 140px;
 }
 
+@media (max-width: 992px) {
+  .main {
+    margin-top: 150px;
+    row-gap: 80px;
+  }
+}
+
 </style>

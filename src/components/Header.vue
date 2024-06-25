@@ -49,7 +49,7 @@ export default {
     }
 
     &-title {
-        font-size: 60px;
+        font-size: calc(25px + 35 * (100vw / 1920));
     }
 
     &__descr {
@@ -60,7 +60,7 @@ export default {
         row-gap: 50px;
 
         &-txt {
-            font-size: 25px;
+            font-size: calc(18px + 7 * (100vw / 1920));
             font-weight: 600;
 
             &::first-letter {
@@ -101,6 +101,73 @@ export default {
             width: 100%;
             z-index: -1;
         }
+    }
+}
+
+@media (min-width: 1920px) {
+    .header {
+        &-title {
+            font-size: 60px !important;
+        }
+    }
+}
+
+@media (max-width: 1375px) {
+    .header {
+        &-images {
+            right: 0;
+            max-width: 800px !important;
+        }
+    }
+}
+
+@media (max-width: 1115px) {
+    .header {
+        &-images {
+            max-width: 700px !important;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        &-images {
+            max-width: 600px !important;
+        }
+    }
+}
+
+@media (max-width: 886px) {
+    .header {
+        padding-top: 80px;
+
+        &-map-img {
+            top: 0;
+        }
+
+        .row {
+            align-items: center;
+        }
+
+        &__descr {
+            align-items: center;
+            text-align: center;
+            row-gap: 35px;
+        }
+
+        &-title {
+            text-align: center;
+        }
+        &-images {
+            max-width: 100% !important;
+            position: relative;
+        }
+    }
+}
+
+@media (max-width: 556px) {
+    .header {
+        padding-top: 50px;
     }
 }
 

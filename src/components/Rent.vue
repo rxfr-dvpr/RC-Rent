@@ -118,6 +118,8 @@ export default {
 
 @media (max-width: 992px) {
     .rent__section {
+        padding-top: 0;
+        
         .row {
             row-gap: 70px;
         }

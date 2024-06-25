@@ -78,4 +78,10 @@ export default {
     }
 }
 
+@media (max-width: 970px) {
+    .reviews__section {
+        padding: 50px 0 100px;
+    }
+}
+
 </style>
