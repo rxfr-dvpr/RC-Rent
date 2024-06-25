@@ -70,4 +70,12 @@ export default {
     }
 }
 
+@media (max-width: 1650px) {
+    .reviews-car-img {
+        max-width: max-content;
+        width: 100%;
+        right: 0 !important;
+    }
+}
+
 </style>
