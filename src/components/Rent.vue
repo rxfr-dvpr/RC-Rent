@@ -75,6 +75,8 @@ export default {
             .rent-icon {
                 max-width: max-content;
                 width: 100%;
+                max-height: max-content;
+                height: 100%;
             }
 
             .rent-name {
